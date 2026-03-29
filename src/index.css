@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 250 20% 5%;
+    --foreground: 0 0% 95%;
+
+    --card: 250 15% 10%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 250 15% 10%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 330 85% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 260 70% 55%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 250 15% 15%;
+    --muted-foreground: 250 10% 60%;
+
+    --accent: 180 70% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 250 15% 18%;
+    --input: 250 15% 18%;
+    --ring: 330 85% 60%;
+
+    --radius: 0.75rem;
+
+    /* Custom portfolio tokens */
+    --gradient-primary: linear-gradient(
+      135deg,
+      hsl(330 85% 60%),
+      hsl(260 70% 55%),
+      hsl(180 70% 50%)
+    );
+    --gradient-hero: linear-gradient(
+      160deg,
+      hsl(250 20% 5%) 0%,
+      hsl(280 30% 12%) 50%,
+      hsl(250 20% 5%) 100%
+    );
+    --gradient-card: linear-gradient(
+      135deg,
+      hsl(250 15% 12%),
+      hsl(260 20% 15%)
+    );
+    --gradient-text: linear-gradient(
+      135deg,
+      hsl(330 85% 65%),
+      hsl(260 70% 60%),
+      hsl(180 70% 55%)
+    );
+    --glow-primary: 0 0 40px hsl(330 85% 60% / 0.3);
+    --glow-secondary: 0 0 40px hsl(260 70% 55% / 0.3);
+    --glow-accent: 0 0 40px hsl(180 70% 50% / 0.3);
+
+    --font-heading: "Space Grotesk", sans-serif;
+    --font-body: "DM Sans", sans-serif;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    cursor:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Ccircle cx='10' cy='10' r='8' fill='none' stroke='%23e84393' stroke-width='2'/%3E%3Ccircle cx='10' cy='10' r='3' fill='%23e84393'/%3E%3C/svg%3E")
+        10 10,
+      auto;
+  }
+
+  a,
+  button,
+  [role="button"],
+  input[type="submit"],
+  select {
+    cursor:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='10' fill='%23e84393' opacity='0.3'/%3E%3Ccircle cx='12' cy='12' r='5' fill='%23e84393'/%3E%3C/svg%3E")
+        12 12,
+      pointer;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+@layer components {
+  .gradient-text {
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glass-card {
+    background: hsl(250 15% 10% / 0.6);
+    backdrop-filter: blur(20px);
+    border: 1px solid hsl(250 15% 25% / 0.3);
+  }
+
+  .glow-border {
+    position: relative;
+  }
+
+  .glow-border::before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    padding: 1px;
+    background: var(--gradient-primary);
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+    pointer-events: none;
+  }
+
+  .glow-border:hover::before {
+    opacity: 1;
+  }
+
+  .section-padding {
+    @apply py-20 md:py-28 px-4 md:px-8;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(250 20% 5%);
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(330 85% 60% / 0.5);
+  border-radius: 3px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
