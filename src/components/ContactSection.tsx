@@ -112,7 +112,7 @@ const ContactSection = () => {
                   name="user_name"
                   required
                   className="w-full px-4 py-3 rounded-lg bg-muted border border-border text-foreground font-body focus:outline-none focus:border-primary transition-colors"
-                  placeholder="John Doe"
+                  placeholder="Your Name"
                 />
               </div>
               <div>
@@ -124,7 +124,7 @@ const ContactSection = () => {
                   type="email"
                   required
                   className="w-full px-4 py-3 rounded-lg bg-muted border border-border text-foreground font-body focus:outline-none focus:border-primary transition-colors"
-                  placeholder="john@example.com"
+                  placeholder="Your Email"
                 />
               </div>
             </div>
@@ -136,7 +136,7 @@ const ContactSection = () => {
                 name="subject"
                 required
                 className="w-full px-4 py-3 rounded-lg bg-muted border border-border text-foreground font-body focus:outline-none focus:border-primary transition-colors"
-                placeholder="Project Inquiry"
+                placeholder="Subject"
               />
             </div>
             <div>
@@ -148,7 +148,7 @@ const ContactSection = () => {
                 required
                 rows={5}
                 className="w-full px-4 py-3 rounded-lg bg-muted border border-border text-foreground font-body focus:outline-none focus:border-primary transition-colors resize-none"
-                placeholder="Tell me about your project..."
+                placeholder="Message"
               />
             </div>
             <motion.button
