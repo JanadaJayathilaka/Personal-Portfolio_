@@ -105,7 +105,9 @@ const HeroSection = () => {
               LinkedIn
             </a>
             <a
-              href="#projects"
+              href="/Janada%20Jayathilaka.pdf"
+              download="Janada_Jayathilaka.pdf"
+              aria-label="Download CV"
               className="px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-heading font-semibold text-sm sm:text-base border border-border text-foreground hover:bg-muted transition-all cursor-pointer flex items-center gap-2"
             >
               <ExternalLink size={16} />

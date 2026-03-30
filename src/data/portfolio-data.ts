@@ -65,12 +65,7 @@ export const skills: Skill[] = [
     color: "hsl(198, 93%, 60%)",
     category: "frontend",
   },
-  {
-    name: "Next.js",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
-    color: "hsl(0, 0%, 80%)",
-    category: "frontend",
-  },
+  // Next.js removed per request
 
   // Backend
   {
@@ -92,10 +87,54 @@ export const skills: Skill[] = [
     category: "backend",
   },
   {
-    name: "PostgreSQL",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
-    color: "hsl(210, 51%, 44%)",
+    name: "MySQL",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+    color: "hsl(205, 60%, 35%)",
     category: "backend",
+  },
+  // PostgreSQL removed per request
+  {
+    name: "Java",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+    color: "hsl(24, 68%, 46%)",
+    category: "backend",
+  },
+  {
+    name: "Spring",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
+    color: "hsl(120, 40%, 30%)",
+    category: "backend",
+  },
+
+  {
+    name: "Jenkins",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg",
+    color: "hsl(0, 0%, 20%)",
+    category: "tools",
+  },
+  {
+    name: "LangChain",
+    icon: "https://cdn.simpleicons.org/langchain",
+    color: "hsl(260, 80%, 60%)",
+    category: "tools",
+  },
+  {
+    name: "LangGraph",
+    icon: "https://cdn.simpleicons.org/langgraph",
+    color: "hsl(200, 80%, 55%)",
+    category: "tools",
+  },
+  {
+    name: "GitHub",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+    color: "hsl(0, 0%, 6%)",
+    category: "tools",
+  },
+  {
+    name: "Nginx",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg",
+    color: "hsl(153, 60%, 35%)",
+    category: "tools",
   },
 
   // Tools
@@ -141,10 +180,10 @@ export const projects: Project[] = [
     description:
       "A full-featured e-commerce platform with real-time inventory, payment processing, and an admin dashboard built with React and Node.js.",
     image:
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
-    tags: ["React", "Node.js", "MongoDB", "Stripe"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/example",
+      "https://plus.unsplash.com/premium_photo-1681488262364-8aeb1b6aac56?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    tags: ["React", "Node.js", "MongoDB", "Express.js", "Stripe"],
+    // liveUrl: "https://example.com",
+    githubUrl: "https://github.com/JanadaJayathilaka/E-Commerce-Watch-shop",
     color: "hsl(330, 85%, 60%)",
   },
   {
@@ -152,32 +191,44 @@ export const projects: Project[] = [
     description:
       "A collaborative task management tool with drag-and-drop, real-time updates, and team workspaces powered by WebSockets.",
     image:
-      "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop",
-    tags: ["Next.js", "TypeScript", "PostgreSQL", "Socket.io"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/example",
+      "https://images.unsplash.com/photo-1611224923853-80b023f02d71?q=80&w=1039&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    tags: ["React.js", "Express.js", "MongoDB", "Node.js"],
+    liveUrl: "https://task-app-mern-frontend.onrender.com",
+    githubUrl: "https://github.com/JanadaJayathilaka/Task-app-MERN",
     color: "hsl(260, 70%, 55%)",
   },
   {
-    title: "AI Chat Assistant",
+    title: "AI MulitAgent Travel Workflow",
     description:
-      "An intelligent chatbot powered by OpenAI GPT with context memory, multi-language support, and custom training capabilities.",
+      "A backend multi-agent travel planning system using LangChain and LangGraph, implementing specialized agents ",
     image:
       "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop",
-    tags: ["Python", "React", "OpenAI", "FastAPI"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/example",
+    tags: ["Python", "LangGraph", "OpenAI", "LangChain"],
+    // liveUrl: "https://example.com",
+    githubUrl:
+      "https://github.com/JanadaJayathilaka/Multi-Agent-Travel-Planner",
     color: "hsl(180, 70%, 50%)",
   },
   {
-    title: "Social Media Dashboard",
+    title: "SpringBoot CI/CD Implementation",
     description:
-      "An analytics dashboard for tracking social media performance across platforms with real-time charts and automated reporting.",
-    image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
-    tags: ["React", "D3.js", "Node.js", "Redis"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/example",
+      "Implemented a CI/CD pipeline for a Spring Boot application using Jenkins, Docker, and Nginx, enabling automated testing, containerization, and deployment to production.",
+    image: "cicd.png",
+
+    tags: ["Spring Boot", "Jenkins", "Docker", "Nginx", "AWS", "SonarQube"],
+    // liveUrl: "https://example.com",
+    githubUrl: "https://github.com/JanadaJayathilaka/Springboot-CI-CD",
+    color: "hsl(45, 90%, 55%)",
+  },
+  {
+    title: "AI chatbot",
+    description:
+      "A conversational AI chatbot built with natural language processing capabilities, designed to assist users with common queries and provide personalized responses.",
+    image: "ai-chatbot.jpg",
+
+    tags: ["python", "FastAPI"],
+    // liveUrl: "https://example.com",
+    githubUrl: "https://github.com/JanadaJayathilaka/Springboot-CI-CD",
     color: "hsl(45, 90%, 55%)",
   },
 ];
