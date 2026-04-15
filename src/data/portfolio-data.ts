@@ -231,6 +231,17 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/JanadaJayathilaka/Springboot-CI-CD",
     color: "hsl(45, 90%, 55%)",
   },
+  {
+    title: "RAG QA System",
+    description:
+      "A Retrieval-Augmented Generation (RAG) question-answering system that combines document retrieval with large language models to answer queries from custom knowledge bases.",
+    image:
+      "https://images.unsplash.com/photo-1593642634367-d91a135587b5?q=80&w=1170&auto=format&fit=crop",
+    tags: ["Python", "LangChain", "OpenAI", "RAG"],
+    // liveUrl: "https://example.com",
+    githubUrl: "https://github.com/JanadaJayathilaka/RAG-QA-system",
+    color: "hsl(200, 80%, 50%)",
+  },
 ];
 
 export const navLinks = [
