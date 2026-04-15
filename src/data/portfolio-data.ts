@@ -228,7 +228,7 @@ export const projects: Project[] = [
 
     tags: ["python", "FastAPI"],
     // liveUrl: "https://example.com",
-    githubUrl: "https://github.com/JanadaJayathilaka/Springboot-CI-CD",
+    githubUrl: "https://github.com/JanadaJayathilaka/AI-chatbot_fullstack",
     color: "hsl(45, 90%, 55%)",
   },
 ];
