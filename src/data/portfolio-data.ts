@@ -179,7 +179,7 @@ export const projects: Project[] = [
     title: "Text to Speech AI SaaS",
     description:
       "ElevenLabs Text-to-Speech AI SaaS built with React, Node.js, and MongoDB, offering natural voice generation and customization options.",
-    image: "./public/image.png",
+    image: "./image.png",
     tags: ["NextJS", "Clerk", "PrismaDB", "ElevenLabs API", "Stripe"],
     liveUrl: "https://text-to-speech-nextjs-seven.vercel.app/",
     githubUrl: "https://github.com/JanadaJayathilaka/Text-to-speech-nextjs",
