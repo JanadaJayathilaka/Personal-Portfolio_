@@ -176,7 +176,17 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: "AI MulitAgent Travel Workflow",
+    title: "Text to Speech AI SaaS",
+    description:
+      "ElevenLabs Text-to-Speech AI SaaS built with React, Node.js, and MongoDB, offering natural voice generation and customization options.",
+    image: "./public/image.png",
+    tags: ["NextJS", "Clerk", "PrismaDB", "ElevenLabs API", "Stripe"],
+    liveUrl: "https://text-to-speech-nextjs-seven.vercel.app/",
+    githubUrl: "https://github.com/JanadaJayathilaka/Text-to-speech-nextjs",
+    color: "hsl(180, 70%, 50%)",
+  },
+  {
+    title: "AI MultiAgent Travel Workflow",
     description:
       "A backend multi-agent travel planning system using LangChain and LangGraph, implementing specialized agents ",
     image:
